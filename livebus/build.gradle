@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 publish {
-    userOrg = 'kaskandk'
-    groupId = 'com.ro0opf.livebus'
-    artifactId = 'livebus'
-    publishVersion = '0.0.2'
-    desc = 'Make it easy to pass data between activity and activity'
-    website = 'https://github.com/ro0opf/LiveBus'
+    userOrg = rootProject.ext.userOrg
+    groupId = rootProject.ext.packageName
+    artifactId = rootProject.ext.artifactId
+    publishVersion = rootProject.ext.libVersionName
+    desc = rootProject.ext.description
+    website = rootProject.ext.websiteUrl
     issueTracker = "${website}/issues"
     repository = "${website}.git"
 }
@@ -18,8 +18,8 @@ android {
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode rootProject.ext.libVersionCode
+        versionName rootProject.ext.libVersionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
