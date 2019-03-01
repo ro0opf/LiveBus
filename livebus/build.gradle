@@ -2,10 +2,10 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 publish {
-    userOrg = 'ro0opf'
+    userOrg = 'kaskandk'
     groupId = 'com.ro0opf.livebus'
     artifactId = 'livebus'
-    publishVersion = '0.0.1'
+    publishVersion = '0.0.2'
     desc = 'Make it easy to pass data between activity and activity'
     website = 'https://github.com/ro0opf/LiveBus'
     issueTracker = "${website}/issues"
