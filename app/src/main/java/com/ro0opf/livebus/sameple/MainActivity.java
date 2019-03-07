@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("##MainAct", ((Board)o).getAge() + "");
             }
         });
+
+        liveBus.removeBus("test");
     }
 
 }
