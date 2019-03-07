@@ -8,7 +8,7 @@ Usage
 
 Add dependency to your gradle file:
 ```groovy
-compile 'ro0opf.lifeinus:livebus:0.0.1-alpha01'
+implementation 'ro0opf.lifeinus:livebus:0.0.1-alpha01'
 ```
 
 **STEP 2**
